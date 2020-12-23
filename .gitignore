@@ -1,3 +1,6 @@
+# sh file to run python script in virtualenv
+runme.sh
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

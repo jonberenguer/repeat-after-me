@@ -99,7 +99,9 @@ def replay_action(log_action):
 
 # main section
 def main():
-    parser = argparse.ArgumentParser(description="")
+    parser = argparse.ArgumentParser(
+            description="repeat-after-me simple macro record and playback."
+            )
     parser.add_argument('-t', '--type', required=True, dest='rtype', type=int, help='define type: 1=record new actions, 2=replay actions from file')
     parser.add_argument('-f', '--filename', dest='fname', default='_action-log.txt', help='filename, if not defined yyyymmdd_HHMM_action-log.txt')
     parser.add_argument('-i', '--num-iteration', dest='iter', type=int, default='0', help='number of time to loop actions. (default: 0 will not loop, but will print actions)')
